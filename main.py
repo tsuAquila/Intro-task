@@ -51,9 +51,13 @@ async def ping(ctx):
 #message_reaction
 
 @client.event
-async def on_reaction_add(reaction, user):
-    channel= client.get_channel(898188608593330177)
-    await channel.send(f'{user} {reaction}')
+async def on_raw_reaction_add (payload):
+  message = await client.get_channel(payload.channel_id).fetch_message(payload.message_id)
+  emoji = payload.emoji
+  user = payload.user_id
+
+  channel= client.get_channel(898188608593330177)
+  await channel.send(f'<@{user}> reacted with {emoji} to {message.author.mention}')
 
 
 #add created role to the user
