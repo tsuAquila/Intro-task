@@ -1,5 +1,5 @@
 # Intro-task
-My submission for Bot Dev Internship at Academia and Technology Focus Group.
+My submission for Bot Dev Internship at μLearn Academia and Technology Focus Group.
 
 
 This bot is hosted on the free version of Replit.com. (https://replit.com/@tsuAquila/Intro-task)
