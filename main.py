@@ -124,4 +124,4 @@ async def names(ctx):
 
 keep_alive()      #don't mind this
 
-client.run(os.environ['TOKEN'])     #token stored as environment variable
+client.run("OTI4Mjk5NzgwMzkwNjYyMjI2.YdWwig.jgIKucQmEnXDp9yuwmZjaigwGLs")     #token stored as environment variable
